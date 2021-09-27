@@ -1,0 +1,10 @@
+<p>directicedemo works!</p>
+<button (click)="show=!show">show</button>
+
+show={{show}};<br>
+<button (click)="show=!show">{{show?'show':'hide'}}</button><br>
+
+<div *ngIf="show">Text is shown</div>
+
+<div *ngIf="show ; else elseBlock">Structural Diractive</div>
+<ng-template #elseBlock>Attribute Directive</ng-template>

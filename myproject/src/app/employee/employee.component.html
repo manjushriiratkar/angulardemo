@@ -1,0 +1,26 @@
+<p>employee works!</p>
+<h1>{{message}}</h1>
+<h2>{{name}}</h2>
+<h4>{{a+b}}</h4>
+<h4>{{a*b}}</h4>
+<h5>{{4+4*2}}</h5>
+<h4>{{message+" "+name}}</h4>
+<h4>{{"Length of name="+name.length}}</h4>
+<h1>{{getData()}}</h1>
+<h1>{{name?name:'no name'}}</h1>
+<!-- <img src='{{path}}'> -->
+<img [src]="path">
+<input type="text" disabled='{{isdisabled}}' value="Hello">
+<input type="text" [disabled]='isdisabled' value="Property binding">
+<input type="text" bind-disabled='isdisabled' value="Property binding">
+
+<table border=3 width=75>
+    <tr>
+        <td [attr.colspan]="3">One Way</td>
+    </tr>
+    <tr><td>Interpolation</td>
+    <td>Property</td>
+<td>Event</td></tr>
+</table>
+
+<button (click)="getMessage('Hello Everyone')">OK</button>
